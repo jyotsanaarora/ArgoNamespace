@@ -1,7 +1,10 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
   name: argocd-manager-role-binding
+  namespace: namespace-gitops
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
