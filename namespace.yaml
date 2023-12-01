@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: openshift-test-gitops
+  name: namespace-gitops
 spec:
   finalizers:
   - kubernetes
