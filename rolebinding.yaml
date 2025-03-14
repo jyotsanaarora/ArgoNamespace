@@ -1,7 +1,7 @@
 kind: RoleBinding
 metadata:
   name: custom-argocd-application-controller
-  namespace: 
+  namespace: namespace-gitops-test-check1
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
